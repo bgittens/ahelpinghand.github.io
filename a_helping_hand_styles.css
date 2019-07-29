@@ -1,0 +1,43 @@
+h1{
+	color:white;
+	text-align:center;
+	margin:0vw;
+	padding:0vw;
+}
+.header{
+	background:rgb(41, 137, 191);
+	font-color:white;
+	margin-top: 0%;
+	font-family: "YACgEZbkUVE 0", _fb_, auto;
+	padding: 2.5%;
+	position:relative;
+}
+body {
+	background:white;
+	font-family: arial;
+	margin:0vw;
+	padding:0%;
+}
+.logo{
+	color:black;
+	height: 8vw;
+	width:8vh;
+	position:absolute;
+	margin-top:-5.5%;
+	margin-left:10%;
+}
+.banner{
+	color: rgb(41, 137, 191);
+	font-family: "YACgEZbkUVE 0", _fb_, auto;
+	font-weight:400vw;
+	margin: 0%;
+	border-width:2vw;
+	text-align:center;
+	font-size:20px;
+}
+.words1{
+	font-size:;
+}
+td{
+	font-color:grey;
+}
