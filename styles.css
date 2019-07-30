@@ -19,8 +19,9 @@ body {
 	padding:0%;
 }
 .logo{
-	color:white;
+	color:black;
 	height: 8vw;
+	width:8vh;
 	position:absolute;
 	margin-top:-6%;
 	margin-left:12%;
@@ -63,7 +64,7 @@ tr{
 /* Dropdown Button */
 .dropbtn {
   color: grey;
-  padding: 16px;
+  padding: 16px 0px;
   font-size: 16px;
   border: none;
 }
@@ -100,5 +101,15 @@ tr{
 .input{
 	width:35%;
 }
+.slideshow{
+	margin-left: 25%;
+	width:;
+}
+
+.mySlides {
+	align-content:center;
+}
+
+
 
 
