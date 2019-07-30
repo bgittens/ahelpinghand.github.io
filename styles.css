@@ -102,12 +102,18 @@ tr{
 	width:35%;
 }
 .slideshow{
-	margin-left: 25%;
-	width:;
+	
+	width:100%;
 }
 
+
 .mySlides {
-	align-content:center;
+	margin-right: 0px;
+	width:50%;
+	height:25%;
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:5%;
 }
 
 
