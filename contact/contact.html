@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact - A Helping Hand</title>
+		<link href="contact.css" rel="stylesheet" type="text/css"
+	</head>
+		
+	<body>
+		<div><h1>Contact</h1></div>
+			<form id="contactform">
+				<label>Name*</label>
+				&nbsp;
+				<input type="text" placeholder="Name" name="name" id="name_inp" required>
+				<br>
+				<br>
+				<label>Email*</label>
+				&nbsp;
+				<input type="text" placeholder="Email" name="email" id="email_inp" required>
+				<br>
+				<br>
+				<label>Phone Number*</label>
+				&nbsp;
+				<input type="text" placeholder="Phone Number" name="phone" id="phone_inp" required>
+				<br>
+				<br>
+				<label>Message*</label>
+				&nbsp;
+				<input type="text" placeholder="Message" name="message" id="message_inp" required>
+				<br>
+				<br>
+				<input type="submit" value="Submit" id="contactsubmit">
+			</form>
+			
+		
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+	   		<script src="contact.js"></script>
+	</body>
+</html>
+
