@@ -44,7 +44,7 @@ td{
 	font-family: 'Farro', sans-serif;
 	margin:0%;
 }
-table{
+.table1{
 	width:100%;
 	margin:0%;
 	padding:0%;
@@ -109,13 +109,15 @@ tr{
 
 .mySlides {
 	margin-right: 0px;
-	width:50%;
-	height:25%;
-	margin-left:25%;
-	margin-right:25%;
-	margin-top:5%;
+	width:30%;
+	height:30%;
+	margin-left:35%;
+	margin-right:35%;
+	margin-top:10%;
 }
-
+.table3{
+	margin-left:45%;
+}
 
 
 
