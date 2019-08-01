@@ -1,8 +1,9 @@
-h1{
+.h1{
 	color:white;
 	text-align:center;
 	margin:0vw;
 	padding:0vw;
+	font-sie:400px;
 }
 .header{
 	background:rgb(41, 137, 191);
