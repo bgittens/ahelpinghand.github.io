@@ -1,0 +1,34 @@
+body { 
+	font-size: 25px;	
+}
+
+input {
+	width: 45%;
+	height: 30px;
+	border-bottom-width: 2px;
+}
+
+#sign_up img{
+		width: 20px;
+}
+
+#log_in img{
+		width: 20px;
+}
+
+#try_again {
+	font-size: 15px;
+	color: red;
+	font-weight: bold;
+}
+
+#too_short {
+	font-size: 15px;
+	color: red;
+	font-weight: bold;
+}
+
+.log_sign_btn {
+	background-color: #2989BF;
+	color: white;
+}

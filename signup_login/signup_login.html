@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sign-up/Log-in</title>
+		<link href="signup_login.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+
+		<div class="sign_up">
+			<form id="sign_up">
+				<h1>Sign-Up</h1>
+				<label>Name*</label>
+				<br>
+				<input type="text" placeholder="name" name="name" id="name_inp" required>
+				<br>
+				<br>
+				<label>Age*</label>
+				<br>
+				<select id="age_drop"></select>
+				<br>
+				<br>
+				<label>Email*</label>
+				<br>
+				<input type="email" placeholder="somebody@example.com" name="email" id="email_inp" required>
+				<br>
+				<br>
+				<label>Phone Number*</label>
+				<br>
+				<input type="tel" placeholder="555-555-555" name="phone" id="phone_inp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				<br>
+				<br>
+				<label>Password*</label>
+				<br>
+				<input type="password" placeholder="Password" name="password" id="password_inp" required>
+				<img src="closed_eye.png" onclick="showPassword()" id="check1">
+				<br>
+				<br>
+				<label>Confirm Password*</label>
+				<br>
+				<input type="password" placeholder="Re-enter Password" name="password2" id="password2_inp" required>
+				<img src="closed_eye.png" onclick="showPassword2()" id="check2">
+				<br>
+				<br>
+				<p id="try_again" style="display:none;">Passwords do not match</p>
+				<p id="too_short" style="display:none;">Password is too short/weak. Must be at least 6 char.</p>
+				<input type="submit" value="Sign-Up" class="log_sign_btn">
+			</form>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="log_in">
+			<form id="log_in">
+				<h1>Log in</h1>
+				<label>Email*</label>
+				<br>
+				<input type="email" placeholder="somebody@example.com" name="email" id="logemail_inp" required>
+				<br>
+				<br>
+				<label>Password*</label>
+				<br>
+				<input type="password" placeholder="Password" name="password" id="logpassword_inp" required>
+				<img src="closed_eye.png" onclick="showPassword3()" id="check3">
+				<br>
+				<br>
+				<input type="submit" value="Log-in" class="log_sign_btn">
+			</form>
+		</div>
+		<input type="submit" value="Log-Out" class="log_sign_btn" onClick="logOut()">
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+ 		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+  		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+
+
+		<script>
+			var firebaseConfig = {
+			apiKey: "AIzaSyAjOEPov0G8Tea7Mjm_tTVVbwO7A5VPeQU",
+			authDomain: "a-helping-hand-551ce.firebaseapp.com",
+			databaseURL: "https://a-helping-hand-551ce.firebaseio.com",
+			projectId: "a-helping-hand-551ce",
+			storageBucket: "a-helping-hand-551ce.appspot.com",
+			messagingSenderId: "22285102950",
+			appId: "1:22285102950:web:c08150dbdde3ccfd"
+		  	};
+
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<script src="signup_login.js"></script>
+	</body>
+</html>
