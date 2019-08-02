@@ -1,9 +1,28 @@
-.h1{
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.bottomnav:link {
+	text-decoration: none;
+	color: rgb(41, 137, 191);
+}
+
+.bottomnav:visited {
+	text-decoration: none;
+	color: rgb(41, 137, 191);
+}
+
+h1{
 	color:white;
 	text-align:center;
 	margin:0vw;
 	padding:0vw;
-	font-sie:800px;
 }
 .header{
 	background:rgb(41, 137, 191);
@@ -22,7 +41,7 @@ body {
 .logo{
 	color:black;
 	height: 8vw;
-	
+	width:8vh;
 	position:absolute;
 	margin-top:-6%;
 	margin-left:12%;
@@ -56,11 +75,16 @@ td{
 tr{
 	text-align:center;
 }
-.login{
+#login{
 	text-align:right;
 	color:white;
 	padding:0%;
 	margin:0%;
+}
+#Trevor{
+	text-align: right;
+	color:white;
+	text-decoration:none;
 }
 /* Dropdown Button */
 .dropbtn {
@@ -119,6 +143,12 @@ tr{
 .table3{
 	margin-left:45%;
 }
+.extra{
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+}
+
+
 
 
 
