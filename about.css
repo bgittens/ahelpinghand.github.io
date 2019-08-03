@@ -1,3 +1,23 @@
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.bottomnav:link {
+	text-decoration: none;
+	color: rgb(41, 137, 191);
+}
+
+.bottomnav:visited {
+	text-decoration: none;
+	color: rgb(41, 137, 191);
+}
+
 h1{
 	color:white;
 	text-align:center;
@@ -19,12 +39,12 @@ body {
 	padding:0%;
 }
 .logo{
-	color:white;
-	height: 8vw;
+	color:black;
+	height: 50px;
+	
 	position:absolute;
-	margin-top:-6%;
+	margin-top:-4%;
 	margin-left:12%;
-
 }
 .banner{
 	color: rgb(41, 137, 191);
@@ -36,24 +56,6 @@ body {
 	font-size:20px;
 	padding:0%;
 }
-	
-.titles{
-	font-size: 40px;
-	font-family: 'Poppins', sans-serif;
-	padding-left:5%;
-	padding-right:5%;
-	text-decoration: underline;
-		
-}
-/*this goes towards the description of the about page*/
-.description{
-	font-family: 'Roboto', sans-serif;
-	padding-left:5%;
-	padding-right:5%;
-	color:grey;
-	font-size: 25px;
-	
-}
 td{
 	color:grey;
 	text-align:center;
@@ -62,7 +64,7 @@ td{
 	font-family: 'Farro', sans-serif;
 	margin:0%;
 }
-table{
+.table1{
 	width:100%;
 	margin:0%;
 	padding:0%;
@@ -73,13 +75,17 @@ table{
 tr{
 	text-align:center;
 }
-.login{
+#login{
 	text-align:right;
 	color:white;
 	padding:0%;
 	margin:0%;
 }
-/* Dropdown Button */
+#Trevor{
+	text-align: right;
+	color:white;
+	text-decoration:none;
+}/* Dropdown Button */
 .dropbtn {
   color: grey;
   padding: 16px;
@@ -129,7 +135,8 @@ tr{
 /* Three columns side by side */
 .column {
   float: left;
-  width: 33.3%;
+  margin-left:3%;
+  width: 20%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -145,6 +152,8 @@ tr{
 /* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color:lightyellow;
+  color:black;
 }
 
 /* Some left and right padding inside the container */
@@ -177,4 +186,30 @@ tr{
 
 .button:hover {
   background-color: #555;
+}
+.titles{
+	font-size: 40px;
+	font-family: 'Poppins', sans-serif;
+	padding-left:5%;
+	padding-right:5%;
+	text-decoration: underline;
+	color:rgb(41, 137, 191);
+		
+}
+/*this goes towards the description of the about page*/
+.description{
+	font-family: 'Roboto', sans-serif;
+	padding-left:5%;
+	padding-right:5%;
+	color:grey;
+	font-size: 25px;
+	margin-right:50%;
+	
+}
+.extra{
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+}
+.us{
+	margin-left:25%;
 }
