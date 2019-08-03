@@ -34,7 +34,7 @@ function saveContactToDatabase(name, email, phone, message) {
 		email: email,
 		phone: phone,
 		message: message
-    });
+    }); 
 	console.log("it works");
 }
   
