@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sign-up/Log-in</title>
 		<title>A Helping Hand</title>
-		<link href="signup_login.css" rel="stylesheet" type="text/css">
+		<link href="signup_login/signup_login.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Farro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:800&display=swap" rel="stylesheet">
         <link rel="icon" href="logo.png">
@@ -13,12 +14,12 @@
 	<body>
 		<div class="banner" id="banner">
             <div class="header">
-               <h1><a href="..//index.html" id="titleheader" class="words1">A Helping Hand</a></h1><img class="logo" src="logo.png">
+               <h1><a href="index.html" id="titleheader" class="words1">A Helping Hand</a></h1><img class="logo" src="logo.png">
             </div>
         </div>
 		<div class="backbtn">
 			<a href="index.html">Back</a>
-			<img src="back_btn.png" id="backbtn">
+			<img src="signup_login/back_btn.png" id="backbtn">
 		</div>
 		<div>
 			<div class="sign_up">
@@ -95,6 +96,6 @@
 
 			firebase.initializeApp(firebaseConfig);
 		</script>
-		<script src="signup_login.js"></script>
+		<script src="signup_login/signup_login.js"></script>
 	</body>
 </html>

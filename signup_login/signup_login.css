@@ -64,7 +64,8 @@ body {
 input {
 	width: 40vw;
 	height: 30px;
-	border-bottom-width: 2px;
+		font-size: 14px;
+
 }
 
 .sign_up {
@@ -95,6 +96,7 @@ input {
 }
 
 .log_sign_btn {
+	font-size: 15px;
 	background-color: #2989BF;
 	color: white;
 }
@@ -107,6 +109,10 @@ input {
 
 #back_btn{
 	width: 50px;
+}
+
+label{
+	font-size: 20px;
 }
 
 

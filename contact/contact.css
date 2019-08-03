@@ -40,10 +40,10 @@ body {
 }
 .logo{
 	color:black;
-	height: 8vw;
-	width:8vh;
+	height: 50px;
+	
 	position:absolute;
-	margin-top:-6%;
+	margin-top:-4%;
 	margin-left:12%;
 }
 .banner{
@@ -119,6 +119,10 @@ tr{
   display: block;
 }
 
+.extra{
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
@@ -127,10 +131,28 @@ tr{
 	width:35%;
 }
 
+#contactform{
+	margin-left:4%;
+	display: block;
+	border-color: black;
+	border-width: 5px;
+}
 
-label {
-	font-size: 25px;	
+#contactform h3 {
+	margin: 0px;
+	padding: 0px;
 }
 
 
+#contactform input {
+	font-size: 14px;
+	width: 60vw;
+	height: 30px;
+	border-bottom-width: 2px;
+}
+
+#contactsubmit {
+	background-color: #2989BF;
+	color: white;
+}
 
