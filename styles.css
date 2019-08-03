@@ -146,6 +146,7 @@ tr{
 .extra{
 	text-align:center;
 	font-family: 'Poppins', sans-serif;
+	font-weight:bold;
 }
 /* Slideshow container */
 .slideshow-container {
