@@ -2,73 +2,77 @@
 <html>
 	<head>
 		<title>Sign-up/Log-in</title>
+		<title>A Helping Hand</title>
 		<link href="signup_login.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Farro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:800&display=swap" rel="stylesheet">
+        <link rel="icon" href="logo.png">
+        <style>a {text-decoration: none;} </style>
 	</head>
 	
 	<body>
-
-		<div class="sign_up">
-			<form id="sign_up">
-				<h1>Sign-Up</h1>
-				<label>Name*</label>
-				<br>
-				<input type="text" placeholder="name" name="name" id="name_inp" required>
-				<br>
-				<br>
-				<label>Age*</label>
-				<br>
-				<select id="age_drop"></select>
-				<br>
-				<br>
-				<label>Email*</label>
-				<br>
-				<input type="email" placeholder="somebody@example.com" name="email" id="email_inp" required>
-				<br>
-				<br>
-				<label>Phone Number*</label>
-				<br>
-				<input type="tel" placeholder="555-555-555" name="phone" id="phone_inp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-				<br>
-				<br>
-				<label>Password*</label>
-				<br>
-				<input type="password" placeholder="Password" name="password" id="password_inp" required>
-				<img src="closed_eye.png" onclick="showPassword()" id="check1">
-				<br>
-				<br>
-				<label>Confirm Password*</label>
-				<br>
-				<input type="password" placeholder="Re-enter Password" name="password2" id="password2_inp" required>
-				<img src="closed_eye.png" onclick="showPassword2()" id="check2">
-				<br>
-				<br>
-				<p id="try_again" style="display:none;">Passwords do not match</p>
-				<p id="too_short" style="display:none;">Password is too short/weak. Must be at least 6 char.</p>
-				<input type="submit" value="Sign-Up" class="log_sign_btn">
-			</form>
+		<div class="banner" id="banner">
+            <div class="header">
+               <h1><a href="index.html" id="titleheader" class="words1">A Helping Hand</a></h1><img class="logo" src="logo.png">
+            </div>
+        </div>
+		<div class="backbtn">
+			<a href="index.html">Back</a>
+			<img src="back_btn.png" id="backbtn">
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div class="log_in">
-			<form id="log_in">
-				<h1>Log in</h1>
-				<label>Email*</label>
-				<br>
-				<input type="email" placeholder="somebody@example.com" name="email" id="logemail_inp" required>
-				<br>
-				<br>
-				<label>Password*</label>
-				<br>
-				<input type="password" placeholder="Password" name="password" id="logpassword_inp" required>
-				<img src="closed_eye.png" onclick="showPassword3()" id="check3">
-				<br>
-				<br>
-				<input type="submit" value="Log-in" class="log_sign_btn">
-			</form>
+		<div>
+			<div class="sign_up">
+				<form id="sign_up">
+					<h1>Sign-Up</h1>
+					<h3>Name*</h3>
+					<input type="text" placeholder="Name" name="name" id="name_inp" required>
+					<br>
+					<br>
+					<h3>Age*</h3>
+					<select id="age_drop"></select>
+					<br>
+					<br>
+					<h3>Email*</h3>
+					<input type="email" placeholder="somebody@example.com" name="email" id="email_inp" required>
+					<br>
+					<br>
+					<h3>Phone Number*</h3>
+					<input type="tel" placeholder="555-555-555" name="phone" id="phone_inp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+					<br>
+					<br>
+					<h3>Password*</h3>
+					<input type="password" placeholder="Password" name="password" id="password_inp" required>
+					<img src="closed_eye.png" onclick="showPassword()" id="check1">
+					<br>
+					<br>
+					<h3>Confirm Password*</h3>
+					<input type="password" placeholder="Re-enter Password" name="password2" id="password2_inp" required>
+					<img src="closed_eye.png" onclick="showPassword2()" id="check2">
+					<br>
+					<br>
+					<p class="sign_err" style="display:none;">Passwords do not match</p>
+					<p class="sign_err" style="display:none;">Password is too short/weak. Must be at least 6 char.</p>
+					<p class="sign_err" style="display:none;">Email is already in use by another account.</p>
+					<input type="submit" value="Sign-Up" class="log_sign_btn">
+				</form>
+			</div>
+			<div class="log_in">
+				<form id="log_in">
+					<h1>Log in</h1>
+					<h3>Email*</h3>
+					<input type="email" placeholder="somebody@example.com" name="email" id="logemail_inp" required>
+					<br>
+					<br>
+					<h3>Password*</h3>
+					<input type="password" placeholder="Password" name="password" id="logpassword_inp" required>
+					<img src="closed_eye.png" onclick="showPassword3()" id="check3">
+					<br>
+					<br>
+					<input type="submit" value="Log-in" class="log_sign_btn">
+				</form>
+			</div>
 		</div>
-		<input type="submit" value="Log-Out" class="log_sign_btn" onClick="logOut()">
+		
 		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

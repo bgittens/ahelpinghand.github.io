@@ -62,20 +62,13 @@ $("#sign_up").submit( function(e){
 
 	//calls the funtion to save the user's info
 	saveUserToDatabase(name, email, phone, age);
-	/*if(password.length < 6){
-		passTooShort();
-	}*/
-	//creates a new user with their password and email
-	if(password !== repassword){
-		passDontMatch();
-	} else if(password.length < 6){
-		passTooShort();
-	} else{
+
+
 		auth.createUserWithEmailAndPassword(email, password).catch(function(error) {
 			// Handle Errors here.
 			var errorCode = error.code;
 			var errorMessage = error.message;
-			console.log(errorCode, errorMessage);
+			alert( errorMessage);
 			// ...
 		});
 		
@@ -85,7 +78,7 @@ $("#sign_up").submit( function(e){
 	document.getElementById("age_drop").value = "13";
 	document.getElementById("password_inp").value = "";
 	document.getElementById("password2_inp").value = "";
-	}
+	
 	
 	
 	});
@@ -149,6 +142,8 @@ function logOut(){
 auth.onAuthStateChanged(firebaseUser => { 
 	if(firebaseUser){
 		console.log(firebaseUser);
+		//window.open("index.html", "_self");
+		//window.close("signup_login.html");
 	} else{
 		console.log("not logged in");
 	}
