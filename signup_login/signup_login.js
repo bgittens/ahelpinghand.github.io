@@ -7,10 +7,10 @@ function showPassword() {
 	var img = document.getElementById("check1");
   	if (x.type === "password") {
     	x.type = "text";
-		img.src = "open_eye.png";
+		img.src = "signup_login/open_eye.png";
   	} else {
 		x.type = "password";
-		img.src = "closed_eye.png";
+		img.src = "signup_login/closed_eye.png";
   	}
 }
 
@@ -20,10 +20,10 @@ function showPassword2() {
 	var img = document.getElementById("check2");
   	if (x.type === "password") {
     	x.type = "text";
-		img.src = "open_eye.png";
+		img.src = "signup_login/open_eye.png";
   	} else {
 		x.type = "password";
-		img.src = "closed_eye.png";
+		img.src = "signup_login/closed_eye.png";
   	}
 }
 
@@ -33,10 +33,10 @@ function showPassword3() {
 	var img = document.getElementById("check3");
   	if (x.type === "password") {
     	x.type = "text";
-		img.src = "open_eye.png";
+		img.src = "signup_login/open_eye.png";
   	} else {
 		x.type = "password";
-		img.src = "closed_eye.png";
+		img.src = "signup_login/closed_eye.png";
   	}
 }
 
@@ -61,9 +61,11 @@ $("#sign_up").submit( function(e){
 	var repassword = document.getElementById("password2_inp").value;
 
 	//calls the funtion to save the user's info
-	saveUserToDatabase(name, email, phone, age);
-
-
+	if (password !== repassword){
+		alert("ALERT: Passwords do not match");
+	} else if (password.length < 6){
+		alert("ALERT: Password is too short/weak");
+	} else{
 		auth.createUserWithEmailAndPassword(email, password).catch(function(error) {
 			// Handle Errors here.
 			var errorCode = error.code;
@@ -71,6 +73,12 @@ $("#sign_up").submit( function(e){
 			alert( errorMessage);
 			// ...
 		});
+		saveUserToDatabase(name, email, phone, age);
+	}
+	
+
+
+		
 		
 	document.getElementById("name_inp").value = "";
 	document.getElementById("phone_inp").value = "";
@@ -82,25 +90,6 @@ $("#sign_up").submit( function(e){
 	
 	
 	});
-
-
-function passDontMatch() {
-  var x = document.getElementById("try_again");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function passTooShort() {
-  var x = document.getElementById("too_short");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
 
 //saves info like name, email, phone number, and age to database
 function saveUserToDatabase(name, email, phone, age) {
