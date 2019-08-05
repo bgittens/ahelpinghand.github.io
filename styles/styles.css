@@ -64,6 +64,7 @@ td{
 	font-family: 'Farro', sans-serif;
 	margin:0%;
 }
+
 .table1{
 	width:100%;
 	margin:0%;
@@ -71,6 +72,11 @@ td{
 	border-bottom:2px solid;
 	border-color:rgb(41, 137, 191);
 }
+
+.table1 td{
+	width:16.6%;
+}
+
 tr{
 	text-align:center;
 }
@@ -161,6 +167,10 @@ tr{
 	border: none;
 	padding: 10px;
 	height: 20px;
+}
+
+.submit {
+	margin-bottom: 10px;
 }
 
 /* Slideshow container */
