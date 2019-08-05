@@ -24,6 +24,7 @@ h1{
 	margin:0vw;
 	padding:0vw;
 }
+
 h3{
 	margin: 0px;
 	padding: 0px;
@@ -37,12 +38,14 @@ h3{
 	padding: 0%;
 	position:relative;
 }
+
 body {
 	background:white;
 	font-family: arial;
 	margin:0vw;
 	padding:0%;
 }
+
 .logo{
 	color:white;
 	height: 50px;
@@ -50,6 +53,7 @@ body {
 	margin-top:-4%;
 	margin-left:12%;
 }
+
 .banner{
 	color: rgb(41, 137, 191);
 	font-family: "YACgEZbkUVE 0", _fb_, auto;
@@ -115,5 +119,18 @@ label{
 	font-size: 20px;
 }
 
+#back_btn{
+	color: rgb(41, 137, 191);
+	margin-left: 2%;
+	margin-top: 2%;
+	font-size: 20px;
+}
+
+#back_btn_img {
+	margin-top:0px;
+	margin-left: 2%;
+	width: 50px;
+	height: auto;
+}
 
 
