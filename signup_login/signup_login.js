@@ -53,33 +53,31 @@ for(var i=13; i<=50; i++){
 $("#sign_up").submit( function(e){
 	e.preventDefault();	
 	
-	var name = document.getElementById("name_inp").value;
+	var name1 = document.getElementById("name_inp").value;
 	var phone = document.getElementById("phone_inp").value;
 	var email = document.getElementById("email_inp").value;
 	var age = document.getElementById("age_drop").value;
 	var password = document.getElementById("password_inp").value;
 	var repassword = document.getElementById("password2_inp").value;
-
-	//calls the funtion to save the user's info
+	var userId = "";
+	
 	if (password !== repassword){
 		alert("ALERT: Passwords do not match");
-	} else if (password.length < 6){
+	} 
+	else if (password.length < 6){
 		alert("ALERT: Password is too short/weak");
-	} else{
+	}
+	else{
 		auth.createUserWithEmailAndPassword(email, password).catch(function(error) {
-			// Handle Errors here.
-			var errorCode = error.code;
 			var errorMessage = error.message;
 			alert( errorMessage);
-			// ...
 		});
-		saveUserToDatabase(name, email, phone, age);
+		
+		console.log(userId);
+		saveUserToDatabase(name1, email, phone, age, userId);
 	}
-	
 
 
-		
-		
 	document.getElementById("name_inp").value = "";
 	document.getElementById("phone_inp").value = "";
 	document.getElementById("email_inp").value = "";
@@ -87,17 +85,18 @@ $("#sign_up").submit( function(e){
 	document.getElementById("password_inp").value = "";
 	document.getElementById("password2_inp").value = "";
 	
-	
-	
 	});
+	
+
 
 //saves info like name, email, phone number, and age to database
-function saveUserToDatabase(name, email, phone, age) {
+function saveUserToDatabase(name1, email, phone, age, userId) {
     db.collection("users").add({
-		name: name,
+		name: name1,
 		email: email,
 		phone: phone,
-		age: age
+		age: age,
+		user: userId
     });
 }
  
@@ -128,14 +127,16 @@ function logOut(){
 	});
 }
 
-auth.onAuthStateChanged(firebaseUser => { 
-	if(firebaseUser){
-		console.log(firebaseUser);
-		window.open("index.html", "_self");
-	} else{
-		console.log("not logged in");
-	}
-});
+
+	auth.onAuthStateChanged(function(user) { 
+		if(user){
+			console.log(user);
+			userId = user.uid;
+			//window.open("contact.html", "_self");
+		} else{
+			console.log("not logged in");
+		}
+	});
 
 
 

@@ -1,16 +1,5 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyAjOEPov0G8Tea7Mjm_tTVVbwO7A5VPeQU",
-    authDomain: "a-helping-hand-551ce.firebaseapp.com",
-    databaseURL: "https://a-helping-hand-551ce.firebaseio.com",
-    projectId: "a-helping-hand-551ce",
-    storageBucket: "a-helping-hand-551ce.appspot.com",
-    messagingSenderId: "22285102950",
-    appId: "1:22285102950:web:c08150dbdde3ccfd"
-  };
-
-firebase.initializeApp(firebaseConfig);
-
-  var db = firebase.firestore();
+var auth = firebase.auth();
+var db = firebase.firestore();
 
 $("#contactform").submit( function(e){
 	e.preventDefault();	
@@ -38,3 +27,10 @@ function saveContactToDatabase(name, email, phone, message) {
 	console.log("it works");
 }
   
+var user = auth.currentUser;
+
+if (user) {
+  console.log(user);
+} else {
+	console.log("nope");
+}
