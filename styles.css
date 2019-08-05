@@ -71,9 +71,11 @@ td{
 	border-bottom:2px solid;
 	border-color:rgb(41, 137, 191);
 	border-right: 2px solid; 
+	font-family: 'Poppins', sans-serif;
 }
 tr{
 	text-align:center;
+	font-family: 'Poppins', sans-serif;
 }
 #login{
 	text-align:right;
@@ -86,6 +88,7 @@ tr{
 	text-align: right;
 	color:white;
 	text-decoration:none;
+	font-family: 'Poppins', sans-serif;
 }
 /* Dropdown Button */
 .dropbtn {
