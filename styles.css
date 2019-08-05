@@ -152,6 +152,17 @@ tr{
 	font-family: 'Poppins', sans-serif;
 	font-weight:bold;
 }
+
+.searchBy{
+	margin: 10px;	
+	width: 125px;
+	background-color: #CACACA;
+	color: #434343;
+	border: none;
+	padding: 10px;
+	height: 20px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;

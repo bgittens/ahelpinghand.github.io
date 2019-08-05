@@ -38,3 +38,51 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+$("#v_submit").submit( function(e){
+	e.preventDefault();	
+	
+	var select = document.getElementById("v_search");
+	console.log(select.value);
+	
+});
+
+$("#i_submit").submit( function(e){
+	e.preventDefault();	
+	
+	var select = document.getElementById("i_search");
+	console.log(select.value);
+	
+});
+
+$("#a_submit").submit( function(e){
+	e.preventDefault();	
+	
+	var select = document.getElementById("a_search");
+	console.log(select.value);
+	
+});
+
+$("#sc_submit").submit( function(e){
+	e.preventDefault();	
+	
+	var select = document.getElementById("sc_search");
+	console.log(select.value);
+	
+});
+
+$("#c_submit").submit( function(e){
+	e.preventDefault();	
+	
+	var select = document.getElementById("c_search");
+	console.log(select.value);
+	
+});
+
+$("#su_submit").submit( function(e){
+	e.preventDefault();	
+	
+	var select = document.getElementById("su_search");
+	console.log(select.value);
+	
+});

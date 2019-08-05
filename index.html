@@ -33,15 +33,13 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Volunteer</button>
                                     <div class="dropdown-content">
-                                        <p>Zip Code</p>
-                                        <form>
+										<select class="searchBy" id="v_search">
+											<option class="v_location">City</option>
+											<option class="v_interest">Interest</option>
+										</select>
+                                        <form id="v_submit">
                                             <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
@@ -50,15 +48,13 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Internships</button>
                                     <div class="dropdown-content">
-                                        <p>City</p>
-                                        <form>
+										<select class="searchBy" id="i_search">
+											<option class="i_location">City</option>
+											<option class="i_interest">Interest</option>
+										</select>
+                                        <form id="i_submit">
                                             <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
@@ -67,20 +63,14 @@
                              <div class="dropdown">
                                 <button class="dropbtn">Academic Programs</button>
                                     <div class="dropdown-content">
-                                        <p>Location</p>
-                                        <form>
+										<select class="searchBy" id="a_search">
+											<option class="a_location">City</option>
+											<option class="a_interest">Interest</option>
+											<option class="a_length">Length</option>
+										</select>
+                                        <form id="a_submit">
                                             <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
-                                        </form>
-                                        <p>Length</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="AP" value="Search!"> </p>
+                                            <input type="submit" class="AP" value="Search"> 
                                         </form>
                                     </div>
                             </div>
@@ -89,15 +79,13 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Scholarships and Competitions</button>
                                     <div class="dropdown-content">
-                                        <p>Type</p>
-                                        <form>
+										<select class="searchBy" id="sc_search">
+											<option class="sc_type">Type</option>
+											<option class="sc_interest">Interest</option>
+										</select>
+                                        <form id="sc_submit">
                                             <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
@@ -106,15 +94,13 @@
                             <div class="dropdown">
                                 <button class="dropbtn">College Courses</button>
                                     <div class="dropdown-content">
-                                        <p>State</p>
-                                        <form>
+										<select class="searchBy" id="c_search">
+											<option class="c_location">City</option>
+											<option class="c_interest">Interest</option>
+										</select>
+                                        <form id="c_submit">
                                             <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
@@ -123,20 +109,14 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Summer Programs</button>
                                     <div class="dropdown-content">
-                                        <p>Length</p>
-                                        <form>
+										<select class="searchBy" id="su_search">
+											<option class="su_location">City</option>
+											<option class="su_interest">Interest</option>
+											<option class="su_length">Length</option>
+										</select>
+                                        <form id="su_submit">
                                             <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
-                                        </form>
-                                        <p>State</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
@@ -201,8 +181,8 @@
             <br><br><br><br><br><br><br><br><br>
             <div class="extra">
                 <a href="about.html" class="bottomnav">About •</a>
-                <a href="contact.html"class="bottomnav">Contact •</a>
-                <a href="donate.html"class="bottomnav">Donate</a>
+                <a href="contact.html" class="bottomnav">Contact •</a>
+                <a href="donate.html" class="bottomnav">Donate</a>
             </div>
             <script
                 src="https://code.jquery.com/jquery-3.4.1.min.js"
