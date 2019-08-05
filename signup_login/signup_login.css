@@ -78,6 +78,10 @@ input {
 	margin-left: 4.5vw;
 }
 
+.sign_up h1{
+	color: black
+}
+
 .log_in{
 	position: relative;
   	float: right;
