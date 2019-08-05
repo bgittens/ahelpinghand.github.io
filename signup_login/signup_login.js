@@ -49,6 +49,10 @@ for(var i=13; i<=50; i++){
 	option.value = i;
 }
 
+
+$("#sign_up").submit( function(e){
+	e.preventDefault();	
+	
 	var name1 = document.getElementById("name_inp").value;
 	var phone = document.getElementById("phone_inp").value;
 	var email = document.getElementById("email_inp").value;
@@ -56,10 +60,7 @@ for(var i=13; i<=50; i++){
 	var password = document.getElementById("password_inp").value;
 	var repassword = document.getElementById("password2_inp").value;
 	var userId = "";
-
-$("#sign_up").submit( function(e){
-	e.preventDefault();	
-
+	
 	if (password !== repassword){
 		alert("ALERT: Passwords do not match");
 	} 
