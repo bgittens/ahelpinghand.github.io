@@ -131,8 +131,7 @@ function logOut(){
 auth.onAuthStateChanged(firebaseUser => { 
 	if(firebaseUser){
 		console.log(firebaseUser);
-		//window.open("index.html", "_self");
-		//window.close("signup_login.html");
+		window.open("index.html", "_self");
 	} else{
 		console.log("not logged in");
 	}
