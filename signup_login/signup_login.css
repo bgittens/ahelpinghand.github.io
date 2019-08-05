@@ -82,6 +82,10 @@ input {
 	color: black
 }
 
+.log_in h1{
+	color: black
+}
+
 .log_in{
 	position: relative;
   	float: right;
