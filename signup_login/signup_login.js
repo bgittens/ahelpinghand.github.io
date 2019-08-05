@@ -71,7 +71,7 @@ $("#sign_up").submit( function(e){
 			var errorMessage = error.message;
 			alert( errorMessage);
 		});
-		userId = user.uid;
+		
 		console.log(userId);
 		saveUserToDatabase(name1, email, phone, age, userId);
 	}
@@ -130,6 +130,7 @@ function logOut(){
 	auth.onAuthStateChanged(function(user) { 
 		if(user){
 			console.log(user);
+			userId = user.uid;
 			//window.open("contact.html", "_self");
 		} else{
 			console.log("not logged in");
