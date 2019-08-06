@@ -22,120 +22,172 @@
        		   <div id="Trevor">
                     <a href="signup_login.html" id="titleheader"id="login">Login/ Sign Up</a>
                 </div>
-               <h1><a href="index.html" id="titleheader" class="words1">A Helping Hand</a></h1><img class="logo" src="photos/logo.png">
+               <h1><a href="index.html" id="titleheader" class="words1">A Helping Hand&nbsp;<img class="logo" src="photos/logo.png"></a></h1>
             </div>
         </div>
             <div>
                 <table class="table1">
                     <tr>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">Volunteer</button>
                                     <div class="dropdown-content">
-                                        <p>Zip Code</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select class="searchBy" id="v_search_city" value="city">
+											<option>City</option>
+											<option>Austin</option>
+											<option>Chicago</option>
+											<option>Dallas</option>
+											<option>New York City</option>
+											<option>Philadelphia</option>
+											<option>Phoenix</option>
+										</select>
+										<br>
+										<select class="searchBy" id="v_search_interest" value="city">
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+										</select>
+										
+                                        <form id="v_submit">
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">Internships</button>
                                     <div class="dropdown-content">
-                                        <p>City</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select class="searchBy" id="i_search_city">
+											<option>City</option>
+										</select>
+										<br>
+										<select class="searchBy" id="i_search_interest">
+											<option>Interest</option>
+										</select>
+										<br>
+                                        <form id="i_submit">
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                             <div class="dropdown">
+                        <td class="dropdown">
+                             <div>
                                 <button class="dropbtn">Academic Programs</button>
                                     <div class="dropdown-content">
-                                        <p>Location</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
-                                        </form>
-                                        <p>Length</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="AP" value="Search!"> </p>
+										<select class="searchBy" id="a_search_city">
+											<option>City</option>
+										</select>
+										<br>
+										<select class="searchBy" id="a_search_interest">
+											<option>Interest</option>
+										</select>
+										<br>
+										<select class="searchBy" id="a_search_length">
+											<option>Length</option>
+										</select>
+										
+                                        <form id="a_submit">
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">Scholarships and Competitions</button>
                                     <div class="dropdown-content">
-                                        <p>Type</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select class="searchBy" id="sc_search_type">
+											<option>Type</option>
+										</select>
+										<br>
+										<select class="searchBy" id="sc_search_interest">
+											<option>Interest</option>
+										</select>
+										<br>
+                                        <form id="sc_submit">
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">College Courses</button>
                                     <div class="dropdown-content">
-                                        <p>State</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select class="searchBy" id="c_search_city">
+											<option>City</option>
+										</select>
+										<br>
+										<select class="searchBy" id="c_search_interest">
+											<option>Interest</option>
+										</select>
+										<br>
+                                        <form id="c_submit">
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
+                        <td class="dropdown" id="lastTd">
                             <div class="dropdown">
                                 <button class="dropbtn">Summer Programs</button>
                                     <div class="dropdown-content">
-                                        <p>Length</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
-                                        </form>
-                                        <p>State</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select class="searchBy" id="su_search_state">
+											<option >State</option>
+											<option>California</option>
+											<option>Delaware</option>
+											<option>Georgia</option>
+											<option>Illinois</option>
+											<option>New Hampshire</option>
+											<option>New York</option>
+											<option>Michigan</option>
+											<option>Pennsylvania</option>
+											<option>Rhode Island</option>
+											<option>Virginia</option>
+											<option>Washington D.C.</option>
+										</select>
+										<br>
+										<select class="searchBy" id="su_search_interest">
+											<option>Interest</option>
+											<option>College Readiness</option>
+											<option>Cultural</option>
+											<option>Economics</option>
+											<option>Education</option>
+											<option>Law</option>
+											<option>Leadership</option>
+											<option>Medical and Health Studies</option>
+											<option>Philosophy and Literature</option>
+											<option>Psychological and Social Sciences</option>
+											<option>Race and Justice</option>
+											<option>Research</option>
+											<option>STEM</option>
+											<option>Visual and Performing Arts</option>
+											<option>Writing and Communication</option>
+										</select>
+										<br>
+										<select class="searchBy" id="su_search_length">
+											<option>Length</option>
+											<option>Less than 1 Week</option>
+											<option>1 Week</option>
+											<option>2 Weeks</option>
+											<option>3 Weeks</option>
+											<option>4 Weeks</option>
+											<option>5 Weeks</option>
+											<option>6 Weeks</option>
+											<option>More than 6 Weeks</option>
+										</select>
+										
+                                        <form id="su_submit">
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
