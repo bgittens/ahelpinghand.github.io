@@ -53,12 +53,14 @@ body {
 	text-align:center;
 	font-size:20px;
 	padding:0%;
+	
 }
 
 .table1{
 	width:100%;
 	margin:0%;
 	padding:0%;
+	border-color:rgb(41, 137, 191);
 	border-bottom:2px solid;
 }
 
@@ -161,7 +163,7 @@ tr{
 
 .searchBy{
 	margin: 10px;	
-	width: 125px;
+	width: 13vw;
 	background-color: #CACACA;
 	color: #434343;
 	border: none;

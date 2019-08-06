@@ -86,3 +86,17 @@ $("#su_submit").submit( function(e){
 	console.log(select.value);
 	
 });
+
+function search() {
+	//doc search element based on what search button was clicked in the nav bar
+	
+	//get that collection based on the above and goi through the option that they chose (ex. location, interest, length)
+	
+	//choose the ones that match with their search
+	
+	//put those items in a temporary list that resets on every search
+	
+	//go through a for loop to display each item based on list[i] (index) 
+	
+	//this is done to put them into the corresponding spaces in the premade template for search results
+}
