@@ -189,3 +189,7 @@ tr{
 	font-family: 'Poppins', sans-serif;
 	font-weight:bold;
 }
+.logo{
+	color:black;
+	height: 50px;
+	position:absolute;
