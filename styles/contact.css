@@ -146,6 +146,19 @@ tr{
 .input{
 	width:35%;
 }
+.searchBy{
+	margin: 10px;	
+	width: 13vw;
+	background-color: #CACACA;
+	color: #434343;
+	border: none;
+	padding: 10px;
+	height: 22px;
+}
+
+.submit {
+	margin-bottom: 10px;
+}
 
 #contactform{
 	margin-left:4%;
