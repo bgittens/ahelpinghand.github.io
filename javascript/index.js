@@ -1,10 +1,11 @@
+var db = firebase.firestore;
+var x = "";
 var slideIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
   var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
+  for (var i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
   slideIndex++;
@@ -24,12 +25,11 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
   var slides = document.getElementsByClassName("tests");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
     }
     for (i = 0; i < dots.length; i++) {
@@ -39,56 +39,23 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-$("#v_submit").submit( function(e){
+
+$("form").submit( function(e){
 	e.preventDefault();	
-	
-	var select = document.getElementById("v_search");
-	console.log(select.value);
+	var submit = $(this);
+  	var formID = submit.attr("id");
+	x = formID;
 	
 });
 
-$("#i_submit").submit( function(e){
-	e.preventDefault();	
-	
-	var select = document.getElementById("i_search");
-	console.log(select.value);
-	
-});
-
-$("#a_submit").submit( function(e){
-	e.preventDefault();	
-	
-	var select = document.getElementById("a_search");
-	console.log(select.value);
-	
-});
-
-$("#sc_submit").submit( function(e){
-	e.preventDefault();	
-	
-	var select = document.getElementById("sc_search");
-	console.log(select.value);
-	
-});
-
-$("#c_submit").submit( function(e){
-	e.preventDefault();	
-	
-	var select = document.getElementById("c_search");
-	console.log(select.value);
-	
-});
-
-$("#su_submit").submit( function(e){
-	e.preventDefault();	
-	
-	var select = document.getElementById("su_search");
-	console.log(select.value);
-	
-});
 
 function search() {
+	
 	//doc search element based on what search button was clicked in the nav bar
+	db.collection(x).get().then(function(doc){
+		
+		
+	});
 	
 	//get that collection based on the above and goi through the option that they chose (ex. location, interest, length)
 	
@@ -99,4 +66,8 @@ function search() {
 	//go through a for loop to display each item based on list[i] (index) 
 	
 	//this is done to put them into the corresponding spaces in the premade template for search results
+}
+
+function getResults() {
+	
 }
