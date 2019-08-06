@@ -13,6 +13,7 @@ firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore;
 var x = "";
 var slideIndex = 0;
+var list = [];
 carousel();
 
 function carousel() {
@@ -51,37 +52,43 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+//checks to see if any of the forms are submitted
 $("form").submit( function(e){
 	e.preventDefault();	
   	
 	var formID = $(this).attr("id");
-	var opt1 = document.getElementsByClassName("");
-	var opt2 = document.getElementsByClassName(""); 
-	var opt3 =  document.getElementsByClassName("");
+	var opt1 = document.getElementsByClassName("option1").value;
+	var opt2 = document.getElementsByClassName("option2").value; 
+	var opt3 = document.getElementsByClassName("option3").value;
 	
 	x = formID;
-	search();
+	
+	console.log(formID, opt1, opt2, opt3);
+	//search();
 });
 
 
 function search() {
-	console.log(db.collection(x));
+
 	//doc search element based on what search button was clicked in the nav bar
-	//db.collection(x).get().then(function(doc){
+	doc = db.collection(x).get().then(function(doc){
 		
 		
-	//});
+	});
 	
-	//get that collection based on the above and goi through the option that they chose (ex. location, interest, length)
+	//get that collection based on the above and go through the option that they chose (ex. location, interest, length)
 	
-	//choose the ones that match with their search
 	
-	//put those items in a temporary list that resets on every search
+	//choose the ones that match with their search and put those items in a temporary list that resets on every search
+	for (var i = 0; i < n.length; i++){
+		
+	}
 	
-	//go through a for loop to display each item based on list[i] (index) 
+	//go through a for loop to display each item based on list[i] (index); this is done to put them into the corresponding spaces in the premade template for search results
+	for (var i = 0; i < list.length; i++){
+		
+	}
 	
-	//this is done to put them into the corresponding spaces in the premade template for search results
 }
 
 function getResults() {
