@@ -184,4 +184,8 @@ tr{
 	background-color: #2989BF;
 	color: white;
 }
-
+.extra{
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+	font-weight:bold;
+}
