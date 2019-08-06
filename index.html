@@ -34,26 +34,28 @@
                                 <button class="dropbtn">Volunteer</button>
                                     <div class="dropdown-content">
 										<select class="searchBy" id="v_search_city" value="city">
-											<option class="v_interest">Location</option>
-											<option class="v_location">Austin</option>
-											<option class="v_location">Chicago</option>
-											<option class="v_location">New York City</option>
-											<option class="v_location">Phoenix</option>
-											<option class="v_location">Dallas</option>
-											<option class="v_location">Philadelphia</option>
+											<option >City</option>
+											<option >Austin</option>
+											<option >Chicago</option>
+											<option >Dallas</option>
+											<option >New York City</option>
+											<option >Philadelphia</option>
+											<option >Phoenix</option>
 										</select>
+										
 										<select class="searchBy" id="v_search_interest" value="city">
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
-											<option class="v_interest">Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
+											<option >Interest</option>
 										</select>
+										
                                         <form id="v_submit">
                                             <input type="submit" class="submit" value="Search"> 
                                         </form>
@@ -64,10 +66,14 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Internships</button>
                                     <div class="dropdown-content">
-										<select class="searchBy" id="i_search">
-											<option class="i_location">City</option>
-											<option class="i_interest">Interest</option>
+										<select class="searchBy" id="i_search_city">
+											<option >City</option>
 										</select>
+										
+										<select class="searchBy" id="i_search_interest">
+											<option >Interest</option>
+										</select>
+										
                                         <form id="i_submit">
                                             <input type="submit" class="submit" value="Search"> 
                                         </form>
@@ -78,11 +84,18 @@
                              <div class="dropdown">
                                 <button class="dropbtn">Academic Programs</button>
                                     <div class="dropdown-content">
-										<select class="searchBy" id="a_search">
-											<option class="a_location">City</option>
-											<option class="a_interest">Interest</option>
-											<option class="a_length">Length</option>
+										<select class="searchBy" id="a_search_city">
+											<option >City</option>
 										</select>
+										
+										<select class="searchBy" id="a_search_interest">
+											<option >Interest</option>
+										</select>
+										
+										<select class="searchBy" id="a_search_length">
+											<option >Length</option>
+										</select>
+										
                                         <form id="a_submit">
                                             <input type="submit" class="submit" value="Search"> 
                                         </form>
@@ -93,10 +106,14 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Scholarships and Competitions</button>
                                     <div class="dropdown-content">
-										<select class="searchBy" id="sc_search">
-											<option class="sc_type">Type</option>
-											<option class="sc_interest">Interest</option>
+										<select class="searchBy" id="sc_search_type">
+											<option >Type</option>
 										</select>
+										
+										<select class="searchBy" id="sc_search_interest">
+											<option >Interest</option>
+										</select>
+										
                                         <form id="sc_submit">
                                             <input type="submit" class="submit" value="Search">
                                         </form>
@@ -107,10 +124,14 @@
                             <div class="dropdown">
                                 <button class="dropbtn">College Courses</button>
                                     <div class="dropdown-content">
-										<select class="searchBy" id="c_search">
-											<option class="c_location">City</option>
-											<option class="c_interest">Interest</option>
+										<select class="searchBy" id="c_search_city">
+											<option >City</option>
 										</select>
+										
+										<select class="searchBy" id="c_search_interest">
+											<option >Interest</option>
+										</select>
+										
                                         <form id="c_submit">
                                             <input type="submit" class="submit" value="Search">
                                         </form>
@@ -122,20 +143,39 @@
                                 <button class="dropbtn">Summer Programs</button>
                                     <div class="dropdown-content">
 										<select class="searchBy" id="su_search_state">
-											<option class="su_location">State</option>
-											<option class="su_location">Virginia</option>
-											<option class="su_location">Delaware</option>
-											<option class="su_location">Pennsylvania</option>
-											<option class="su_location">Michigan</option>
-											<option class="su_location">Rhode Island</option>
-											<option class="su_location">Washington D.C.</option>
+											<option >State</option>
+											<option >Delaware</option>
+											<option >New York</option>
+											<option >Michigan</option>
+											<option >Pennsylvania</option>
+											<option >Rhode Island</option>
+											<option >State</option>
+											<option >Virginia</option>
+											<option >Washington D.C.</option>
 										</select>
+										
 										<select class="searchBy" id="su_search_interest">
-											<option class="su_interest">Interest</option>
+											<option >Interest</option>
+											<option >College Readiness</option>
+											<option >Cultural</option>
+											<option >Economics</option>
+											<option >Education</option>
+											<option >Law</option>
+											<option >Leadership</option>
+											<option >Medical and Health Studies</option>
+											<option >Philosophy and Literature</option>
+											<option >Psychological and Social Sciences</option>
+											<option >Race and Justice</option>
+											<option >Research</option>
+											<option >STEM</option>
+											<option >Visual and Performing Arts</option>
+											<option >Writing and Communication</option>
 										</select>
+										
 										<select class="searchBy" id="su_search_length">
 											<option class="su_length">Length</option>
-										</select>									
+										</select>
+										
                                         <form id="su_submit">
                                             <input type="submit" class="submit" value="Search">
                                         </form>
