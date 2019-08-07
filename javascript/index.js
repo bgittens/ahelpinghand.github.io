@@ -116,10 +116,12 @@ function search(formID, opt1, opt2, opt3) {
 	//}
 	
 	//go through a for loop to display each item based on list[i] (index); this is done to put them into the corresponding spaces in the premade template for search results
-	
+}
+//make alert if not all inputs are put in, search for top input first then look for more specifications
+
+function inputAll() {
 	
 }
-
 /*function getResults() {
 	
 	for (var j = 0; j < list.length; j++){
