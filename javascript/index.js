@@ -86,18 +86,25 @@ $("form").submit( function(e){
 	
 	
 	console.log(formID, opt1, opt2, opt3);
-	//search();
+	search(formID, opt1, opt2, opt3);
 	
 });
 
 
-function search() {
+function search(formID, opt1, opt2, opt3) {
 
 	//doc search element based on what search button was clicked in the nav bar
-	doc = db.collection(x).get().then(function(doc){
+	
+	if(opt2 === undefined && opt2 === undefined){
+		doc = db.collection(x).get().then(function(doc){
 		
+		});
+	} else if(opt3 === undefined){
 		
-	});
+	} else{
+		
+	}
+
 	
 	//get that collection based on the above and go through the option that they chose (ex. location, interest, length)
 	
@@ -108,12 +115,14 @@ function search() {
 	}
 	
 	//go through a for loop to display each item based on list[i] (index); this is done to put them into the corresponding spaces in the premade template for search results
-	for (var j = 0; j < list.length; j++){
-		
-	}
+	
 	
 }
 
 function getResults() {
 	
+	for (var j = 0; j < list.length; j++){
+		var click = document.getElementById(x.value([i]);
+		list[i] = click;
+	}
 }
