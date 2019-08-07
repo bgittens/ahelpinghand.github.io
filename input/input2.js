@@ -37,7 +37,7 @@ document.getElementById("email_inp").value = " ";
 });
 
 function saveContactToDatabase(name, desc, state, req, link, photo, length, interest) {
-    doc = db.collection("collegeClasses_info").add({
+    db.collection("collegeClass_info").add({
 		name: name,
 		description: desc,
 		state: state,
