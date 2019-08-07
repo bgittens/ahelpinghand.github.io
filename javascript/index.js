@@ -83,26 +83,27 @@ $("form").submit( function(e){
 		opt3 = document.getElementById("su_search_length").value;
 	}
 	
-	
-	
-	console.log(formID, opt1, opt2, opt3);
 	search(formID, opt1, opt2, opt3);
 	
 });
 
+//var citiesRef = db.collection("cities");
 
 function search(formID, opt1, opt2, opt3) {
 
 	//doc search element based on what search button was clicked in the nav bar
 	
-	if(opt2 === undefined && opt2 === undefined){
-		doc = db.collection(x).get().then(function(doc){
+	if(opt2 === undefined && opt3 === undefined){
+		console.log(formID, opt1);
+		//doc = db.collection(x).get().then(function(doc){
 		
-		});
+		//});
 	} else if(opt3 === undefined){
-		
+		console.log(formID, opt1, opt2);
+
 	} else{
-		
+		console.log(formID, opt1, opt2, opt3);
+
 	}
 
 	
@@ -110,7 +111,7 @@ function search(formID, opt1, opt2, opt3) {
 	
 	
 	//choose the ones that match with their search and put those items in a temporary list that resets on every search
-	for (var h = 0; h < n.length; h++){
+	for (var h = 0; h < list.length; h++){
 		
 	}
 	
@@ -119,10 +120,11 @@ function search(formID, opt1, opt2, opt3) {
 	
 }
 
-function getResults() {
+/*function getResults() {
 	
 	for (var j = 0; j < list.length; j++){
-		var click = document.getElementById(x.value([i]);
+		var click = document.getElementById(x.value([i]));
 		list[i] = click;
 	}
 }
+*/
