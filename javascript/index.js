@@ -95,9 +95,8 @@ function search(formID, opt1, opt2, opt3) {
 	
 	if(opt2 === undefined && opt3 === undefined){
 		console.log(formID, opt1);
-		//doc = db.collection(x).get().then(function(doc){
+		getResults();
 		
-		//});
 	} else if(opt3 === undefined){
 		console.log(formID, opt1, opt2);
 
@@ -122,11 +121,10 @@ function search(formID, opt1, opt2, opt3) {
 function inputAll() {
 	
 }
-/*function getResults() {
+function getResults() {
 	
 	for (var j = 0; j < list.length; j++){
 		var click = document.getElementById(x.value([i]));
 		list[i] = click;
 	}
 }
-*/
