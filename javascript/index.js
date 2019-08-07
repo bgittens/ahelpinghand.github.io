@@ -62,9 +62,9 @@ $("form").submit( function(e){
 	var opt2;
 	var opt3;
 	
-	if(formID === "v_submit") {
+	if(formID === "opp_info") {
 		opt1 = document.getElementById("v_search_city").value;
-	} else if(formID === "i_submit") {
+	} else if(formID === "internships_info") {
 		opt1 = document.getElementById("i_search_city").value;
 		opt2 = document.getElementById("i_search_interest").value;
 	} else if(formID === "a_submit") {
@@ -74,10 +74,10 @@ $("form").submit( function(e){
 	} else if(formID === "sc_submit") {
 		opt1 = document.getElementById("sc_search_type").value;
 		opt2 = document.getElementById("sc_search_interest").value;
-	} else if(formID === "c_submit") {
+	} else if(formID === "collegeClass_info") {
 		opt1 = document.getElementById("c_search_city").value;
 		opt2 = document.getElementById("c_search_interest").value;
-	} else if(formID ==="su_submit") {
+	} else if(formID ==="summerProgram_info") {
 		opt1 = document.getElementById("su_search_state").value;
 		opt2 = document.getElementById("su_search_interest").value;
 		opt3 = document.getElementById("su_search_length").value;
@@ -111,9 +111,9 @@ function search(formID, opt1, opt2, opt3) {
 	
 	
 	//choose the ones that match with their search and put those items in a temporary list that resets on every search
-	for (var h = 0; h < list.length; h++){
+	//for (var h = 0; h < list.length; h++){
 		
-	}
+	//}
 	
 	//go through a for loop to display each item based on list[i] (index); this is done to put them into the corresponding spaces in the premade template for search results
 	
