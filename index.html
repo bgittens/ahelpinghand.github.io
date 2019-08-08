@@ -52,7 +52,7 @@
                             <div>
                                 <button class="dropbtn">Internships</button>
                                     <div class="dropdown-content">
-										<select id="i_search_city">
+										<select id="i_search_state">
 											<option>State</option>
 										</select>
 										<br>
@@ -248,12 +248,27 @@
                 <a href="donate.html" class="bottomnav">Donate</a>
             </div>
 		<br><br>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
  		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
   		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
 
-            <script src="javascript/index.js"></script>
+
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyAjOEPov0G8Tea7Mjm_tTVVbwO7A5VPeQU",
+				authDomain: "a-helping-hand-551ce.firebaseapp.com",
+				databaseURL: "https://a-helping-hand-551ce.firebaseio.com",
+				projectId: "a-helping-hand-551ce",
+				storageBucket: "a-helping-hand-551ce.appspot.com",
+				messagingSenderId: "22285102950",
+				appId: "1:22285102950:web:c08150dbdde3ccfd"
+			};
+
+			firebase.initializeApp(firebaseConfig);
+		</script>
+     	<script src="javascript/index.js"></script>
     </body>
 </html>

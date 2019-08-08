@@ -1,14 +1,3 @@
-var firebaseConfig = {
-	apiKey: "AIzaSyAjOEPov0G8Tea7Mjm_tTVVbwO7A5VPeQU",
-	authDomain: "a-helping-hand-551ce.firebaseapp.com",
-	databaseURL: "https://a-helping-hand-551ce.firebaseio.com",
-	projectId: "a-helping-hand-551ce",
-	storageBucket: "a-helping-hand-551ce.appspot.com",
-	messagingSenderId: "22285102950",
-	appId: "1:22285102950:web:c08150dbdde3ccfd"
-};
-
-firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 var x = "";
@@ -71,18 +60,21 @@ $("form").submit( function(e){
 	var doc;
 	var doc2;
 	var doc3;
-	
+	var opp = db.collection(formID);
 
 	if(formID === "opp_info") {
-		doc = db.collection("opp_info").where("location", "==", "Dallas, TX");
+		opt1 = document.getElementById("v_search_city").value;
+		doc = opp.where("location", "==", opt1);
+		
 		console.log(doc);
 	} 
 	
 	else if(formID === "internships_info") {
-		opt1 = document.getElementById("i_search_city").value;
+		opt1 = document.getElementById("i_search_state").value;
 		opt2 = document.getElementById("i_search_interest").value;
-		doc = db.collection("internships_info").where("state", "==", opt1);
-		doc2 = db.collection("internships_info").where("interest", "==", opt2);
+		doc = opp.where("state", "==", opt1);
+		doc2 = opp.where("interest", "==", opt2);
+		
 		console.log(doc, doc2);
 		//getResults(doc, opt1, doc2, opt2);
 	} 
@@ -91,25 +83,31 @@ $("form").submit( function(e){
 		opt1 = document.getElementById("a_search_state").value;
 		opt2 = document.getElementById("a_search_interest").value;
 		opt3 = document.getElementById("a_search_length").value;
-		doc = db.collection("a_submit").where("state", "==", opt1);
-		doc2 = db.collection("a_submit").where("interest", "==", opt2);
-		doc3 = db.collection("a_submit").where("length", "==", opt3);
+		doc = opp.where("state", "==", opt1);
+		doc2 = opp.where("interest", "==", opt2);
+		doc3 = opp.where("length", "==", opt3);
+		
+		console.log(doc, doc2, doc3);
 		//getResults(doc, opt1, doc2, opt2, doc3, opt3);
 	} 
 	
 	else if(formID === "sc_submit") {
 		opt1 = document.getElementById("sc_search_type").value;
 		opt2 = document.getElementById("sc_search_interest").value;
-		doc = db.collection(formID).where("type", "==", opt1);
-		doc2 = db.collection(formID).where("interest", "==", opt2);
+		doc = opp.where("type", "==", opt1);
+		doc2 = opp.where("interest", "==", opt2);
+		
+		console.log(doc, doc2);
 		//getResults(doc, opt1, doc2, opt2);
 	} 
 	
 	else if(formID === "collegeClass_info") {
 		opt1 = document.getElementById("c_search_state").value;
 		opt2 = document.getElementById("c_search_interest").value;
-		doc = db.collection(formID).where("state", "==", opt1);
-		doc2 = db.collection(formID).where("interest", "==", opt2);
+		doc = opp.where("state", "==", opt1);
+		doc2 = opp.where("interest", "==", opt2);
+		
+		console.log(doc, doc2);
 		//getResults(doc, opt1, doc2, opt2);
 	} 
 	
@@ -117,14 +115,17 @@ $("form").submit( function(e){
 		opt1 = document.getElementById("su_search_state").value;
 		opt2 = document.getElementById("su_search_interest").value;
 		opt3 = document.getElementById("su_search_length").value;
-		doc = db.collection(formID).where("state", "==", opt1);
-		doc2 = db.collection(formID).where("interest", "==", opt2);
-		doc3 = db.collection(formID).where("length", "==", opt3);
+		doc = opp.where("state", "==", opt1);
+		doc2 = opp.where("interest", "==", opt2);
+		doc3 = opp.where("length", "==", opt3);
+		
+		console.log(doc, doc2, doc3);
 		//getResults(doc, opt1, doc2, opt2, doc3, opt3);
 	}
 	
 });
 
+/*
 //var citiesRef = db.collection("cities");
 
 //function search(doc) {
@@ -168,7 +169,7 @@ function getResults(doc, opt1, doc2, opt2, doc3, opt3) {
 	}
 }
 
-/*	if(opt2 === undefined && opt3 === undefined){
+if(opt2 === undefined && opt3 === undefined){
 		console.log(formID, opt1);
 		//getResults(opt1);
 		
