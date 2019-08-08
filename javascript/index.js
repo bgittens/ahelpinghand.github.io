@@ -79,11 +79,9 @@ doc2 = db.collection(formID).where("interest", "==", opt2);
 doc3 = db.collection(formID).where("length", "==", opt3);
 search3(doc, doc2, doc3);
 } else if(formID === "schoolarhipsComp_info") {
-opt1 = document.getElementById("sc_search_type").value;
-opt2 = document.getElementById("sc_search_interest").value;
-doc = db.collection(formID).where("type", "==", opt1);
-doc2 = db.collection(formID).where("interest", "==", opt2);
-search2(doc, doc2);
+opt1 = document.getElementById("sc_search_interest").value;
+doc = db.collection(formID).where("interest", "==", opt1);
+search(doc);
 } else if(formID === "collegeClass_info") {
 opt1 = document.getElementById("c_search_state").value;
 opt2 = document.getElementById("c_search_interest").value;
