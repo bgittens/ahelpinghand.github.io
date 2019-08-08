@@ -128,7 +128,7 @@ function search (doc){
 function search2(doc, doc2){
 		doc.get().then(function(result){
 		 // returns all matching documents
-			result.forEach(function (doc) {
+			result.forEach(function (doc, doc2) {
 			  	console.log(doc.data());
 				console.log(doc2.data());
 			});
