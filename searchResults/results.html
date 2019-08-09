@@ -10,142 +10,228 @@
             });
         </script>
         <title>A Helping Hand</title>
-        <link  href="styles/results.css" rel="stylesheet" type="text/css">
+        <link  href="results.css" rel="stylesheet" type="text/css">
+		<link href="..//styles/styles.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Farro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:800&display=swap" rel="stylesheet">
-   		<link rel="icon" href="photos/favicon.png">
+   		<link rel="icon" href="..//photos/favicon.png">
         <STYLE>A {text-decoration: none;} </STYLE>
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="banner" id="banner">
             <div class="header">
-       		   <div id="Trevor">
-                    <a href="signup_login.html" id="titleheader"id="login">Login/ Sign Up</a>
-                </div>
-               <h1><a href="index.html" id="titleheader" class="words1">A Helping Hand</a></h1><img class="logo" src="photos/logo.png">
+       		   <h1><a href="index.html" id="titleheader" class="words1">A Helping Hand&nbsp;<img class="logo" src="..//photos/logo.png"></a></h1>
             </div>
         </div>
             <div>
-                <table class="table1">
+ <table class="table1">
                     <tr>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">Volunteer</button>
                                     <div class="dropdown-content">
-                                        <p>Zip Code</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+											<select  id="v_search_city">
+											<option>City</option>
+											<option>Chicago, IL</option>
+											<option>Dallas, TX</option>
+											<option>Los Angeles, CA</option>
+											<option>New York City, NY</option>
+											<option>Philadelphia, PA</option>
+											<option>Phoenix, AZ</option>
+											</select>
+                                        <form id="opp_info">
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">Internships</button>
                                     <div class="dropdown-content">
-                                        <p>City</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select id="i_search_state">
+										<option>State</option>
+										<option>California</option>
+										<option>Maryland</option>
+										<option>Massachusetts</option>
+										<option>New York</option>
+										<option>Pennsylvania</option>
+										<option>Washington</option>
+										<option>Washington D.C.</option>
+										<option>Wisconsin</option>
+										<option>Texas</option>
+										<option>Locations May Vary</option>
+										</select>
+										<br>
+										<select id="i_search_interest">
+										<option>Interest</option>
+										<option>Entertainment</option>
+										<option>Government</option>
+										<option>History</option>
+										<option>Job readiness</option>
+										<option>Medicine</option>
+										<option>STEM</option>
+										</select>
+										<br>
+                                        <form id="internships_info">
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                             <div class="dropdown">
+                        <td class="dropdown">
+                             <div>
                                 <button class="dropbtn">Academic Programs</button>
                                     <div class="dropdown-content">
-                                        <p>Location</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
-                                        </form>
-                                        <p>Length</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="AP" value="Search!"> </p>
+										<select  id="a_search_state">
+										<option>State</option>
+										<option>California</option>
+										<option>Delaware</option>
+										<option>Michigan</option>
+										<option>New Jersey</option>
+										<option>New York</option>
+										<option>Pennsylvania</option>
+										<option>Texas</option>
+										<option>Washinton</option>
+										</select>
+										<br>
+										<select id="a_search_interest">
+										<option>Interest</option>
+										<option>Art</option>
+										<option>Job Readiness</option>
+										<option>Medicine</option>
+										<option>School</option>
+										<option>STEM</option>
+
+										</select>
+										<br>
+										<select id="a_search_length">
+										<option>Length</option>
+										<option>One day</option>
+										<option>1 week</option>
+										<option>6 weeks</option>
+										<option>7 weeks</option>
+										<option>9 weeks</option>
+										<option>22 weeks</option>
+										<option>Semester</option>
+										<option>1 year</option>
+										<option>Lengths May vary</option>
+										</select>
+
+                                        <form id="academicOpp_info">
+                                            <input type="submit" class="submit" value="Search"> 
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="dropbtn">Scholarships and Competitions</button>
+                        <td class="dropdown">
+                            <div>
+                                <button class="dropbtn">Scholarships</button>
                                     <div class="dropdown-content">
-                                        <p>Type</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select id="sc_search_interest">
+											<option>Interest</option>
+											<option>Art</option>
+											<option>Cultural</option>
+											<option>History and Social</option>
+											<option>STEM</option>
+											<option>Writing</option>
+										</select>
+										<br>
+                                        <form id="schoolarshipsComp_info">
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
-                            <div class="dropdown">
+                        <td class="dropdown">
+                            <div>
                                 <button class="dropbtn">College Courses</button>
                                     <div class="dropdown-content">
-                                        <p>State</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select  id="c_search_state">
+											<option>State</option>
+											<option>Arizona</option>
+											<option>California</option>
+											<option>Delaware</option>
+											<option>Illinois</option>
+											<option>New York</option>
+											<option>Pennsylvania</option>
+											<option>West Virginia</option>
+											</select>
+											<br>
+											
+                                        <form id="collegeClass_info">
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
                         </td>
-                        <td>
+                        <td class="dropdown" id="lastTd">
                             <div class="dropdown">
                                 <button class="dropbtn">Summer Programs</button>
                                     <div class="dropdown-content">
-                                        <p>Length</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                        <input type="submit" value="Search!"> </p>
-                                        </form>
-                                        <p>Interest</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
-                                        </form>
-                                        <p>State</p>
-                                        <form>
-                                            <input class="input" type="text" id="new_bio">
-                                            <input type="submit" class="submit"value="Search!"> </p>
+										<select  id="su_search_state">
+										<option >State</option>
+										<option>California</option>
+										<option>Delaware</option>
+										<option>Georgia</option>
+										<option>Illinois</option>
+										<option>Massachusetts</option>
+										<option>Michigan</option>
+										<option>Minnesota</option>
+										<option>New Hampshire</option>
+										<option>New York</option>
+										<option>North Carolina</option>
+										<option>Oregon</option>
+										<option>Pennsylvania</option>
+										<option>Rhode Island</option>
+										<option>Virginia</option>
+										<option>Washington D.C.</option>
+										<option>Multiple</option>
+										</select>
+										<br>
+										<select id="su_search_interest">
+										<option>Interest</option>
+										<option>College Readiness</option>
+										<option>Cultural</option>
+										<option>Economics</option>
+										<option>Education</option>
+										<option>Law</option>
+										<option>Leadership</option>
+										<option>Medical and Health Studies</option>
+										<option>Philosophy and Literature</option>
+										<option>Pre-College</option>
+										<option>Psychological and Social Sciences</option>
+										<option>Race and Justice</option>
+										s	<option>STEM</option>
+										<option>Visual and Performing Arts</option>
+										<option>Writing and Communication</option>
+										</select>
+										<br>
+										<select id="su_search_length">
+										<option>Length</option>
+										<option>Varies</option>
+										<option>Less than 1 Week</option>
+										<option>1 Week</option>
+										<option>2 Weeks</option>
+										<option>3 Weeks</option>
+										<option>4 Weeks</option>
+										<option>5 Weeks</option>
+										<option>6 Weeks</option>
+										<option>More than 6 Weeks</option>
+										</select>
+
+                                        <form id="summerProgram_info">
+                                            <input type="submit" class="submit" value="Search">
                                         </form>
                                     </div>
                             </div>
                         </td>
                     </tr>
-            </table>
+            </table> <!-- fix spacing @JP -->
         </div>    
-                <p id="title">"Title"</p>
-                <img id="insert" src="photos/loading.jpeg">
+                <p id="title">Title</p>
+                <img id="insert" src="..//photos/loading.jpeg">
                 <p id="des">Description</p>
                 <p id="desW">"this is the description"</p>
                 <p id="loc">Location</p>
@@ -155,9 +241,9 @@
                 <p id="link">"this is the link"</p>
             <br><br><br><br>
             <div class="extra">
-                <a href="about.html" class="bottomnav">About •</a>
-                <a href="contact.html"class="bottomnav">Contact •</a>
-                <a href="donate.html"class="bottomnav">Donate</a>
+                <a href="..//.about.html" class="bottomnav">About •</a>
+                <a href="..//contact.html"class="bottomnav">Contact •</a>
+                <a href="..//donate.html"class="bottomnav">Donate</a>
             </div>
 			<br><br>
             <script
@@ -165,6 +251,6 @@
                 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
                 crossorigin="anonymous">
             </script>
-            <script src="javascript/index.js"></script>
+            <script src="..//javascript/index.js"></script>
     </body>
 </html>
