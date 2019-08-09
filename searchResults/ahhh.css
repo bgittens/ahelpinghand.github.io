@@ -157,6 +157,24 @@ font-family: 'Poppins', sans-serif;
 padding-bottom: -40%;
 color: rgb(41, 137, 191);
 }
+#title_1{
+font-size:47px;
+margin-top:5%;
+margin-bottom:0%;
+margin-left:21%;
+font-family: 'Poppins', sans-serif;
+padding-bottom: -40%;
+color: rgb(41, 137, 191);
+}
+#title_2{
+font-size:60px;
+margin-top:5%;
+margin-bottom:0%;
+margin-left:21%;
+font-family: 'Poppins', sans-serif;
+padding-bottom: -40%;
+color: rgb(41, 137, 191);
+}
 #insert{
 width:30%;
 margin-left:21%;
@@ -217,5 +235,8 @@ margin-top:0%;
 font-family: 'Poppins', sans-serif;
 }
 
+#title_sch {
+	
+}
 
 /*on firebase try to enter opportunities and have them appear into the quotations*/
