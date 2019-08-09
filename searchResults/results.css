@@ -1,6 +1,23 @@
 
 
-#title, #des, #loc, #requ, #link {
+#des, #loc, #requ {
 	color: rgb(41, 137, 191);
-	font-size: 75px;
+	font-size: 45px;
+}
+
+#insert {
+	height: 50vw;
+}
+
+#title{
+	color: rgb(41, 137, 191);
+	font-size: 65px;
+}
+
+p {
+	font-size: 22.5px;
+}
+
+table {
+	width: 80vw;
 }

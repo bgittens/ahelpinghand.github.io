@@ -254,11 +254,22 @@ q {font-style: italic;}
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
 
-#titleheader{
+#titleheader {
 font-weight:bold;
 }
 
+.links p {
+	color: black;
+}
 
+.links table {
+	font-weight: bolder;
+	margin: auto;
+	font-size: 35px;
+}
 
+.left {
+	text-align: left;
+}
 
 

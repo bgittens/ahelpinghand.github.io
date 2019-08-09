@@ -59,6 +59,7 @@ var opt3;
 var doc;
 var doc2;
 var doc3;
+var x = [];
 
 if(formID === "opp_info") {
 	opt1 = document.getElementById("v_search_city").value;
@@ -118,7 +119,8 @@ function search (doc){
 doc.get().then(function(result){
 // returns all matching documents
 result.forEach(function (doc) {
- console.log(doc.data());
+ x = doc.data();
+ console.log(x);
 });
 }).catch(function (err){
 console.log(err);
