@@ -61,49 +61,55 @@ var doc2;
 var doc3;
 
 if(formID === "opp_info") {
-opt1 = document.getElementById("v_search_city").value;
-doc = db.collection(formID).where("location", "==", opt1);
-search(doc);
+	opt1 = document.getElementById("v_search_city").value;
+	doc = db.collection(formID).where("location", "==", opt1);
+	search(doc);
+	window.open("searchResults/volunteer.html");
 } 
 	
 else if(formID === "internships_info") {
-opt1 = document.getElementById("i_search_state").value;
-opt2 = document.getElementById("i_search_interest").value;
-doc = db.collection(formID).where("state", "==", opt1);
-doc2 = db.collection(formID).where("interest", "==", opt2);
-search2(doc, doc2);
+	opt1 = document.getElementById("i_search_state").value;
+	opt2 = document.getElementById("i_search_interest").value;
+	doc = db.collection(formID).where("state", "==", opt1);
+	doc2 = db.collection(formID).where("interest", "==", opt2);
+	search2(doc, doc2);
+	window.open("searchResults/internship.html");
 } 
 	
 else if(formID === "academicOpp_info") {
-opt1 = document.getElementById("a_search_state").value;
-opt2 = document.getElementById("a_search_interest").value;
-opt3 = document.getElementById("a_search_length").value;
-doc = db.collection(formID).where("state", "==", opt1);
-doc2 = db.collection(formID).where("interest", "==", opt2);
-doc3 = db.collection(formID).where("length", "==", opt3);
-search3(doc, doc2, doc3);
+	opt1 = document.getElementById("a_search_state").value;
+	opt2 = document.getElementById("a_search_interest").value;
+	opt3 = document.getElementById("a_search_length").value;
+	doc = db.collection(formID).where("state", "==", opt1);
+	doc2 = db.collection(formID).where("interest", "==", opt2);
+	doc3 = db.collection(formID).where("length", "==", opt3);
+	search3(doc, doc2, doc3);
+	window.open("searchResults/academic.html");
 } 
 	
 else if(formID === "schoolarshipsComp_info") {
-opt1 = document.getElementById("sc_search_interest").value;
-doc = db.collection(formID).where("interest", "==", opt1);
-search(doc);
+	opt1 = document.getElementById("sc_search_interest").value;
+	doc = db.collection(formID).where("interest", "==", opt1);
+	search(doc);
+	window.open("searchResults/scholarships.html");
 } 
 	
 else if(formID === "collegeClass_info") {
-opt1 = document.getElementById("c_search_state").value;
-doc = db.collection(formID).where("state", "==", opt1);
-search(doc);
+	opt1 = document.getElementById("c_search_state").value;
+	doc = db.collection(formID).where("state", "==", opt1);
+	search(doc);
+	window.open("searchResults/college.html");
 } 
 	
 else if(formID ==="summerProgram_info") {
-opt1 = document.getElementById("su_search_state").value;
-opt2 = document.getElementById("su_search_interest").value;
-opt3 = document.getElementById("su_search_length").value;
-doc = db.collection(formID).where("state", "==", opt1);
-doc2 = db.collection(formID).where("interest", "==", opt2);
-doc3 = db.collection(formID).where("length", "==", opt3);
-search3(doc, doc2, doc3);
+	opt1 = document.getElementById("su_search_state").value;
+	opt2 = document.getElementById("su_search_interest").value;
+	opt3 = document.getElementById("su_search_length").value;
+	doc = db.collection(formID).where("state", "==", opt1);
+	doc2 = db.collection(formID).where("interest", "==", opt2);
+	doc3 = db.collection(formID).where("length", "==", opt3);
+	search3(doc, doc2, doc3);
+	window.open("searchResults/summer.html");
 }
 
 });
